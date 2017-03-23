@@ -43,4 +43,12 @@ public class CarrinhoDeCompras {
 		return total;
 	}
 
+	public double calcularValorCarrinhoDesconto(){
+		double total = 0;
+		for (Produto produto : produtos) {
+			total =+ produto.getValorCompra()*0.9;
+		}
+		return total;
+	}
+
 }
