@@ -35,18 +35,10 @@ public class CarrinhoDeCompras {
 		return true;
 	}
 
-	public double calcularValorCarrinho(){
-		double total = 0;
-		for (Produto produto : produtos) {
-			total =+ produto.getValorVenda();
-		}
-		return total;
-	}
-
 	public double calcularValorCarrinhoDesconto(){
 		double total = 0;
 		for (Produto produto : produtos) {
-			total =+ produto.getValorCompra()*0.9;
+			total =+ produto.getValorVenda()*0.9;
 		}
 		return total;
 	}
