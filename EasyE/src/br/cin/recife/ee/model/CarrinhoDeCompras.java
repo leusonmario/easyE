@@ -38,7 +38,7 @@ public class CarrinhoDeCompras {
 	public double calcularValorCarrinho(){
 		double total = 0;
 		for (Produto produto : produtos) {
-			total =+ produto.getValorVenda();
+			total =+ produto.getValorCompra();
 		}
 		return total;
 	}
