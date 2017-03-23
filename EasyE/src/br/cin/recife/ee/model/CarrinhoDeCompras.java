@@ -18,4 +18,12 @@ public class CarrinhoDeCompras {
 		this.produtos = produtos;
 	}
 
+	public boolean addProdutoCarrinho(Produto newProduto){
+		if (checagemProdutoDuplicado(newProduto) == true){
+			this.produtos.add(newProduto);
+			return true;
+		}
+		return false;
+	}
+
 }
